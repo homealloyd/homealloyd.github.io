@@ -38,7 +38,7 @@
     let msg = id("check-correct");
     let groupColor = id("group-color");
 
-    if(ansInput.value === "ARMS" || ansInput.value === "arms") {
+    if(ansInput.value.toLowerCase() === "arms") {
       switch(groupColor.value) {
         case "orange":
           msg.textContent = "Focking gr8 job m8! Go over to Arms! Also, your hint is: ryGarden";
