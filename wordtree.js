@@ -21,6 +21,10 @@
     // Make buttons toggle appropriately
     for (const button of buttons) {
       button.addEventListener("click", toggleView);
+      // Pause all audio 
+      button.addEventListener('click', () => {
+        document.qsa('audio').forEach(el => el.pause());
+      });
     }
   }
 
@@ -28,6 +32,7 @@
    * Function to toggle views between the menu view and the game view.
    */
   function toggleView() {
+
     // Get the button id, target clue name
     const target_id = this.classList.value;
     const curr_display_id = this.parentNode.id;
@@ -37,6 +42,7 @@
 
     next_elem.classList.toggle("hidden");
     curr_elem.classList.toggle("hidden");
+
   }
 
   init();
