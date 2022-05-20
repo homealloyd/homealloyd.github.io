@@ -26,6 +26,23 @@
         qsa('audio').forEach(el => el.pause());
       });
     }
+
+    let submitBtn = id("submit");
+    submitBtn.addEventListener("click", checkAnswer);
+  }
+
+
+  function checkAnswer() {
+    let ansInput = id("answer");
+    let msg = id("check-correct");
+
+    if(ansInput.value === "ARMS" || ansInput.value === "arms") {
+      msg.textContent = "Great work! Go over to Arms!";
+    }
+    else {
+      msg.textContent = "WRONG! Try again, frosh";
+    }
+    ansInput.value = "";
   }
 
   /**
@@ -42,7 +59,6 @@
 
     next_elem.classList.toggle("hidden");
     curr_elem.classList.toggle("hidden");
-
   }
 
   init();
