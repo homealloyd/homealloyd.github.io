@@ -23,7 +23,7 @@
       button.addEventListener("click", toggleView);
       // Pause all audio 
       button.addEventListener('click', () => {
-        document.qsa('audio').forEach(el => el.pause());
+        qsa('audio').forEach(el => el.pause());
       });
     }
   }
