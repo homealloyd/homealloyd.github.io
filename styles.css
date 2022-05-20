@@ -1,0 +1,83 @@
+
+/*
+Name: Jennie Chung
+CS 132 Spring 2022
+Date: May 17th, 2022
+This is the styles.css page for the Word Tree page, which provides a way to create a tree full of 
+antonyms and synonyms.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Special+Elite&display=swap');
+
+/* Styles for #tree-view */
+.hidden {
+  display: none;
+}
+
+header, footer, section, p, #selections {
+  background-color:gold;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+p {
+  padding:10px
+}
+
+#current-defn {
+  width: 200px;
+}
+
+label {
+  text-align: center;
+}
+
+#selections div, header, footer, section, p, #selections {
+  margin: 10px;
+}
+
+h1 {
+  font-family: 'Special Elite', cursive;
+}
+
+main, footer {
+  font-family: 'Josefin Slab', serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color:royalblue;
+}
+
+section, header, #selections, #tree, #selections div, #tree-defn-display {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section, header, #selections, #tree, #selections div {
+  align-items: center;
+}
+
+#tree-defn-display {
+  align-items: flex-start;
+}
+
+header, footer, section, #selections div, #selections, #tree {
+  flex-direction: column;
+}
+
+section > h1 {
+  font-family:'Courier New', Courier, monospace;
+}
+
+/* Adding code for ditch day */
+.hidden {
+  display: none;
+}
+
+button {
+  margin: 10px;
+}
