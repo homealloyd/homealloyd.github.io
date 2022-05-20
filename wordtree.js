@@ -35,14 +35,26 @@
   function checkAnswer() {
     let ansInput = id("answer");
     let msg = id("check-correct");
+    let groupColor = id("group-color");
 
     if(ansInput.value === "ARMS" || ansInput.value === "arms") {
-      msg.textContent = "Great work! Go over to Arms!";
+      switch(groupColor.value) {
+        case "orange":
+          msg.textContent = "Focking gr8 job m8! Go over to Arms! Also, your hint is: ryGarden";
+          break;
+        case "blue":
+          msg.textContent = "Focking gr8 job m8! Go over to Arms! Also, your hint is: h";
+          break;
+        default:
+          msg.textContent = "Focking gr8 job m8! Go over to Arms!";
+      }
     }
     else {
       msg.textContent = "WRONG! Try again, frosh";
     }
+
     ansInput.value = "";
+    groupColor.value = "";
   }
 
   /**
