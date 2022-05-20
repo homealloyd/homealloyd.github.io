@@ -17,6 +17,7 @@
    */
   function init() {
     let buttons = qsa("button");
+    qsa('audio').forEach(el => el.pause());
     
     // Make buttons toggle appropriately
     for (const button of buttons) {
